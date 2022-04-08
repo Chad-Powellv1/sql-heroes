@@ -9,14 +9,14 @@ from database.connection import create_connection,execute_query
 # ----------------------------#
 
 def read_bio(name):
-    return execute_query(
+    result = execute_query(
     """
     SELECT name, biography
     FROM heroes
     WHERE name LIKE %s
     """,[name]
     ).fetchall()
-    
+    return result
 
-result = read_bio('The Seer')
-print(result)
+# result = read_bio('The Seer')
+# print(result)

@@ -15,4 +15,4 @@ def delete_hero(name):
     )
     print('Hero removed successfully!')
 
-delete_hero('Pyro')
+# delete_hero('Pyro')
