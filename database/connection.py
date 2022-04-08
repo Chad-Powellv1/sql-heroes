@@ -1,4 +1,5 @@
 import psycopg
+from psycopg.rows import dict_row
 from psycopg import OperationalError
 
 def create_connection(db_name, db_user, db_password, db_host = "localhost", db_port = "5432"):
@@ -10,6 +11,7 @@ def create_connection(db_name, db_user, db_password, db_host = "localhost", db_p
             password=db_password,
             host=db_host,
             port=db_port,
+            row_factory=dict_row,
         )
         print("Connection to PostgreSQL DB successful")
     except OperationalError as e:

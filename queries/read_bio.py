@@ -15,5 +15,5 @@ def read_bio(name):
     FROM heroes
     WHERE name LIKE %s
     """,[name]
-    ).fetchall()
+    ).fetchone()
     return result
