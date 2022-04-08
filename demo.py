@@ -108,7 +108,7 @@ def small_journey():
     )
     welcome = None
     while welcome not in {'1', '2', '3', '4', '5'}:
-        welcome = input("Enter selection: ")
+        welcome = input("Enter the number or your selection: ")
     
     # --- CREATE A NEW SUPER HERO --- #
         if welcome == '1':
