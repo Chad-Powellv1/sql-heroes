@@ -17,6 +17,3 @@ def read_bio(name):
     """,[name]
     ).fetchall()
     return result
-
-# result = read_bio('The Seer')
-# print(result)

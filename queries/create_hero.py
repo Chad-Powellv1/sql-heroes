@@ -13,6 +13,3 @@ def create_hero(name,about,bio):
     VALUES (%s,%s,%s)
     """,[name,about,bio])
     print('New Hero added successfully!')
-
-
-# create_hero('Pyro', 'Fire','I like Fire')

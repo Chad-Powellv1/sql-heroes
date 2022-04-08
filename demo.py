@@ -85,14 +85,15 @@ def small_journey():
     )
     time.sleep(10)
     print(""" 
-    Houston we have a problem!!!!!! 😱
+    Houston we have a problem!!!!!! 😱 \n
     """
     )
     time.sleep(8)
     print(""" 
-    Nah must have been a small 🪲
+    Nah must have been a 🪲 \n
     """
     )
+    time.sleep(6)
 
     print(""" 
     \n 🦸 Welcome to the Super Heroes information network. 🦸
@@ -126,7 +127,8 @@ def small_journey():
             """
             )
             create_hero(name,about,bio)
-        
+            small_journey()
+
         # --- READ SUPER HERO BIOGRAPHY --- #
         elif welcome == '2':
             print(""" 
@@ -139,7 +141,8 @@ def small_journey():
             """
             )
             print(read_bio(name))
-            time.sleep(15)
+            time.sleep(20)
+            small_journey()
 
         # --- UPDATE SUPER HEROES BIOGRAPHY --- #
         elif welcome == '3':
@@ -156,6 +159,8 @@ def small_journey():
             """
             )
             update_bio(bio,name)
+            time.sleep(2)
+            small_journey()
 
         # --- DELETE A SUPER HERO --- #
         elif welcome == '4':
@@ -168,6 +173,8 @@ def small_journey():
             """
             )
             delete_hero(name)
+            time.sleep(2)
+            small_journey()
 
         # --- EXIT DEMO --- #
         elif welcome == '5':
@@ -177,6 +184,7 @@ def small_journey():
             )
             time.sleep(5)
             exit()
+            small_journey()
 
         # --- ELSE STATEMENT --- #
         else:
