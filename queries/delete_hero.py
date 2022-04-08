@@ -14,5 +14,3 @@ def delete_hero(name):
     """,[name]
     )
     print('Hero removed successfully!')
-
-# delete_hero('Pyro')

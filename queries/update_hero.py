@@ -15,6 +15,3 @@ def update_bio(bio, name):
     )
     return update
     print('You have successfully updated the biography')
-
-
-# update_bio('Good News', 'The Seer')
